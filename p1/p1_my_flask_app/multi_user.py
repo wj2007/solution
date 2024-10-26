@@ -1,5 +1,5 @@
 """
-C:\Jia\dev_home\daily_practise\solution\p1\p1_my_flask_app>curl -o user_data.txt http://localhost:5000/users  
+curl -o user_data.txt http://localhost:5000/users  
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   171  100   171    0     0    773      0 --:--:-- --:--:-- --:--:--   773
