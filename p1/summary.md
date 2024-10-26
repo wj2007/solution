@@ -1,14 +1,11 @@
-Flask 默认使用开发服务器，在本地环境中运行时它只支持 HTTP(而不支持 HTTPS)
-主要是因为 Flask 的开发服务器不适合用于生产环境，并且其默认配置不包括 SSL/TLS 支持.
+总结
 
-    Flask 的内置开发服务器不支持 HTTPS, 适合开发和测试
-    对于生产环境，推荐使用 WSGI 服务器(如 Gunicorn)配合 Nginx, Nginx可以有效地处理 HTTPS 连接，并且是当前最佳实践
-    确保为你的应用配置有效的 SSL/TLS 证书，以确保通信安全.
-
+ - Flask 的内置开发服务器不支持 HTTPS, 默认配置不包括SSL/TLS 支持，适合开发和测试
+ - 对于生产环境，推荐使用 WSGI 服务器(如 Gunicorn)配合 Nginx, Nginx可以有效地处理 HTTPS 连接，并且是当前最佳实践
+ - 确保为你的应用配置有效的 SSL/TLS 证书，以确保通信安全.
 
 
 执行
-- git clone git@github.com:wj2007/solution.git
 - python -m venv p1_venv
 - \solution\p1\p1_venv\Scripts> .\activate
 - python.exe -m pip install --upgrade pip
